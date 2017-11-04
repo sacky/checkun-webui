@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.setting p{
+	font-size:20px;
+	border-bottom:1px solid #000000;
+	padding:20px 0px 20px 25px;
+	position:relative;
+}
+
+.setting span{
+	padding-left:20px;
+}
+
+.setting .span2{
+	padding-left:40px;
+}
+
+.setting i{
+	position:absolute;
+	top:5px;
+	right:-10px;
+	width:50px;
+	font-size:50px;
+	padding-right:10px;
+}

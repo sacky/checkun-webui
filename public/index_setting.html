@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>title</title>
+<link href="src/css/style_common.css" rel="stylesheet" type="text/css" >
+<link href="src/css/style_setting.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="src/js/footerFixed.js"></script>
+<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+<header>
+	<p class="back"><a href="#">＜</a></p>
+	<p class="title">LINE title</p>
+	<p><a href="#"><img class="cross" src="src/img/cross.png" alt="close"></a></p>
+	<p><a href="#"><img class="edit" src="src/img/pen.png" alt="edit"></a></p>
+
+</header>
+
+
+<nav>
+  <ul>
+  	<li ><a href="index.html">会計<br>メンバー</a></li>
+  	<li ><a href="index_pay.html">支払<br>一覧</a></li>
+  	<li class="current"><a href="#">設定<br>一覧</a></li>
+  	<li class="last"><a href="index_history.html">精算<br>履歴</a></li>
+  </ul>
+</nav>
+
+<!--content-->
+<div class="content">
+	<p class="subject">設定（num）</p>
+
+	<a href="index_setting_detail.html">
+	<div class="setting">
+	<p class="setting_1">割り勘端数(丸め)設定<span>100円</span><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+	</div><!--setting-->
+	</a>
+
+	<a href="#">
+	<div class="setting">
+	<p class="setting_1">支払配分(傾斜)設定<span class="span2">あり</span><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+	</div><!--setting-->
+	</a>
+
+</div><!--content-->
+
+<footer id="footer">
+	<p><a href="#">設定を初期化する</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+/*reset*/
+/*---reset-------------------*/
+html,body,ul,ul,li,p,dl,dt,dd{
+  padding:0;
+  margin:0;
+  line-height:1.0;
+  font-family: 
+    'Hiragino Kaku Gothic ProN',
+    Meiryo,
+    "sans-serif";
+}
+
+
+img{
+  vertical-align: bottom;
+  border: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor:pointer;
+}
+ul{
+  list-style: none;
+}
+header,footer,a{
+  display: block;
+}
+body{
+  font-size:16px;
+  color:#413F3F;
+  background: #fff;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*767px以下*/
+@media only screen and (max-width: 767px) {
+	body{
+		background: #d3e4dc;
+	}
+	header{
+		height:50px;
+		margin:20px 0px;
+	}
+	.back, .groupicon, .title, .edit{
+		float:left;
+	}
+	
+	.back{
+		height:50px;
+		width:100px;
+		font-size:38px;
+		padding-top:6px;
+		background:url(../img/icon.png) no-repeat 50px;
+	}
+	
+	.title{
+		font-size:30px;
+		padding:10px 0px 0px 30px;
+	}
+	
+	img.edit,img.cross{
+		float:right;
+		width:30px;
+		padding-top:10px;
+		margin-right:10px;
+	}
+	
+
+/*nav*/
+	nav{
+		overflow: hidden;
+		margin-bottom:15px;
+	}
+	
+	nav li a{
+		float:left;
+		width:25%;
+		line-height: 1.2;
+		font-size:15px;
+		text-align: center;
+		padding:15px 3%;
+		border-top:3px solid #000000;
+		border-bottom:3px solid #000000;
+		border-right:1px solid #000000;
+	}
+	nav li.last a{ 
+		border-right:none;
+	}
+	
+	.current a{
+		background:#70bf41;
+		color:#ffffff;
+	}
+	
+/*content*/
+	.content p.subject{
+    padding-left:20px;
+		font-size:27px;
+		padding-bottom: 15px;
+		border-bottom:1px solid #000000;
+	}
+	
+/*footer*/
+	footer{
+		border-top:1px solid #ccc;
+		margin-top:10px;
+		padding:10px 0px 10px;
+		
+	}
+	
+	footer p a{
+		padding:10px;
+		text-align: center;
+		font-size:20px;
+		background: #70bf41;
+		color:#ffffff;
+		width:80%;
+		margin:0 auto;
+		border-radius: 10px;
+	}
+	
+	
+}
+
