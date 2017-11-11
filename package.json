@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sacky/checkun-webui/issues"
   },
-  "homepage": "https://github.com/sacky/checkun-webui#readme"
+  "homepage": "https://github.com/sacky/checkun-webui#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
