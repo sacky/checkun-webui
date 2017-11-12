@@ -1,44 +1,156 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>title</title>
-<link href="src/css/style_common.css" rel="stylesheet" type="text/css" >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="src/js/footerFixed.js"></script>
-<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link href="src/css/style_common.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_pay_detail.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_pay.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting_detail.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting_detail_02.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting_pricechange.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting_pricechange_detail.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/style_setting_ratechange.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/menubar.css" rel="stylesheet" type="text/css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="src/js/footerFixed.js"></script>
+	<script type="text/javascript" src="src/js/menubar.js"></script>
+	<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
-<header>
-	<p class="back"><a href="#">＜</a></p>
-	<p class="title">LINE title</p>
-	<p><a href="#"><img class="cross" src="src/img/cross.png" alt="close"></a></p>
-	<p><a href="#"><img class="edit" src="src/img/pen.png" alt="edit"></a></p>
+	<header>
+		<p class="back"><a href="#">＜</a></p>
+		<p class="title">LINE title</p>
+		<p><a href="#"><img class="cross" src="src/img/cross.png" alt="close"></a></p>
+		<p><a href="#"><img class="edit" src="src/img/pen.png" alt="edit"></a></p>
 
-</header>
+	</header>
 
 
-<nav>
-  <ul>
-  	<li class="current"><a href="#">会計<br>メンバー</a></li>
-  	<li><a href="index_pay.html">支払<br>一覧</a></li>
-  	<li><a href="index_setting.html">設定<br>一覧</a></li>
-  	<li class="last"><a href="index_history.html">精算<br>履歴</a></li>
-  </ul>
-</nav>
+	<div class="tab-block">
+		<nav>
+			<ul class="tab-list">
+				<li data-tabIndex="1" class="current"><a href="#">会計<br>メンバー</a></li>
+				<li data-tabIndex="2"><a href="#">支払<br>一覧</a></li>
+				<li data-tabIndex="3"><a href="#">設定<br>一覧</a></li>
+				<li data-tabIndex="4" class="last"><a href="#">精算<br>履歴</a></li>
+			</ul>
+		</nav>
+		<div class="tab-area current" data-tabIndex="1">
+			<div class="content">
+				<p class="subject">
+					会計メンバー一覧（num）
+				</p>
+			</div>
+		</div>
+		<div class="tab-area" data-tabIndex="2">
+			<!--content payment_page-->
+			<div class="content payment_page">
+				<p class="subject">
+					支払一覧（num）<span class="total">合計 ¥10,000</span>
+				</p>
 
-<!--content-->
-<div class="content">
-	<p class="subject">
-	会計メンバー一覧（num）
-	</p>
-</div><!--content-->
+				<a href="index_pay_detail.html">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
 
-<footer id="footer">
-	<p><a href="#">会計メンバーに招待する</a></p>
-</footer>
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
 
-</body>
-</html>
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
+
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
+
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
+
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
+
+				<a href="#">
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"></dd>
+					</dl>
+				</a>
+
+			</div>
+			<!--content-->
+		</div>
+		<div class="tab-area" data-tabIndex="3">
+			<!--content setting_page-->
+			<div class="content">
+				<p class="subject">設定（num）</p>
+
+				<a href="index_setting_detail.html">
+					<div class="setting">
+						<p class="setting_1">割り勘端数(丸め)設定<span class="price">100円</span></p>
+					</div>
+				</a>
+
+				<a href="index_setting_detail_2.html">
+					<div class="setting">
+						<p class="setting_1">支払配分(傾斜)設定<span class="on_or_off">あり</span></p>
+					</div>
+				</a>
+			</div>
+			<!--content-->
+
+		</div>
+		<div class="tab-area" data-tabIndex="4">
+			<!--content history_page-->
+			<div class="content">
+				<p class="subject">
+					精算履歴
+				</p>
+
+				<div class="setting">
+					<p class="setting_1">まだ精算されていません。</p>
+				</div>
+
+			</div>
+			<!--content-->
+		</div>
+
+
+		<footer id="footer">
+			<p><a href="#">会計メンバーに招待する</a></p>
+		</footer>
+
+	</body>
+	</html>
