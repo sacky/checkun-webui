@@ -22,8 +22,6 @@ header p.home{
 
 .setting_detail footer{
 	border-top:none;
-	border-bottom: 1px solid #000000;
-	margin-bottom: 15px;
 }
 
 .setting_detail p.q{
@@ -35,7 +33,7 @@ header p.home{
 	width:20px;
 	height:20px;
 	border:1px solid #A4A4A4;
-	padding: 2% 1% 2% 3%;
+	padding:5px;
 	border-radius: 50%;
 	margin-right: 5px;
 }

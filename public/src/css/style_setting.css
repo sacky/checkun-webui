@@ -8,19 +8,18 @@
 	position:relative;
 }
 
-.setting span{
-	padding-left:20px;
+.setting span.price{
+	padding-left:15px;
 }
 
-.setting .span2{
-	padding-left:40px;
+.setting span.on_or_off{
+	padding-left:35px;
 }
 
-.setting i{
-	position:absolute;
-	top:5px;
-	right:-10px;
-	width:50px;
-	font-size:50px;
-	padding-right:10px;
+.setting p.setting_1{
+	background: url(../img/arrow.png) no-repeat 95% 15px;
+	background-size:30px;
 }
+
+	footer{
+		border-top:none;}

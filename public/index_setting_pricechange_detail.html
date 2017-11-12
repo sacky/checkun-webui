@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>title</title>
 <link href="src/css/style_common.css" rel="stylesheet" type="text/css" >
-<link href="src/css/style_setting_detail.css" rel="stylesheet" type="text/css">
+<link href="src/css/style_setting_pricechange_detail.css" rel="stylesheet" type="text/css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src="file:///Macintosh HD/Users/lisatanioka/Desktop/checkun/js/footerFixed.js"></script>
@@ -14,8 +14,8 @@
 <body class="setting_detail">
 
 <header>
-	<p class="back"><a href="index_setting.html">＜</a></p>
-	<p class="title">設定一覧</p>
+	<p class="back"><a href="index_setting_pricechange.html">＜</a></p>
+	<p class="title">支払金額差</p>
 	<p class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></p>
 
 </header>
@@ -23,22 +23,22 @@
 
 <!--content payment_page-->
 <div class="content payment_page_detail">
-	<p class="subject">割り勘端数(丸め)設定</p>
-
+	<p class="subject">支払金額差設定</p>
+	
 	<div class="marume">
-	  <p><input type="radio" name="marune" value="10" checked="checked">10円</p>
-    <p><input type="radio" name="marune" value="100">100円</p>
-    <p><input type="radio" name="marune" value="500" >500円</p>
-    <p><input type="radio" name="marune" value="1000">1,000円</p>
+	  <p><input type="radio" name="marune" value="10" checked="checked">-2,000円</p>
+    <p><input type="radio" name="marune" value="100">-1,000円</p>
+    <p><input type="radio" name="marune" value="500" >0円</p>
+    <p><input type="radio" name="marune" value="1000">+1,000円</p>
+    <p><input type="radio" name="marune" value="1000">+2,000円</p>
 	</div>
 
 </div><!--content-->
 
 <footer id="footer">
-	<p><a href="#">割り勘端数(丸め)を変更する</a></p>
+	<p><a href="index_setting_pricechange.html">支払金額差を変更する</a></p>
 </footer>
 
-	<p class="q"><a href="#"><span>？</span>割り勘端数(丸め)設定とは？</a></p>
 
 </body>
 </html>

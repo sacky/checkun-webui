@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body.setting_detail_02 header .back{
+	background:none;
+}
+
+body.setting_detail_02 header{
+	padding-bottom: 60px;
+	border-bottom: 3px solid #000000;
+	}
+
+header p.home{
+	font-size:38px;
+	float:right;
+	padding:5px 10px 0px 0px;
+}
+
+
+.setting_detail_02 footer{
+	border-top:none;
+	margin-bottom: 15px;
+}
+
+
+.setting_detail_02 p.q{
+	text-align: center;
+}
+
+.setting_detail_02 p.q span{
+	font-size:20px;
+	border:1px solid #A4A4A4;
+	padding: 2% 1% 2% 3%;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+/*支払割合・支払金額差*/
+.inclination{
+	padding-left:20px;
+	border-bottom:1px solid #000000;
+}
+
+.inclination:last-child{
+	border-bottom:none;
+}
+.inclination dt{
+		padding:15px 0px;
+		font-size:27px;
+	}
+
+.inclination dd{
+	line-height:2.0;
+}
+
+.inclination dd span{
+	float:right;
+	padding-right:20px;
+}

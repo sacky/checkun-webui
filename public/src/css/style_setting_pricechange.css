@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+body.setting_detail_ratechange header .back{
+	background:none;
+	width:50px;
+}
+
+body.setting_detail_ratechange header{
+	padding-bottom: 60px;
+	border-bottom: 3px solid #000000;
+	}
+
+header p.home{
+	font-size:38px;
+	float:right;
+	padding:5px 10px 0px 0px;
+}
+
+.setting p{
+	font-size:20px;
+	border-bottom:1px solid #000000;
+	padding:20px 0px 20px 25px;
+	position:relative;
+}
+
+.setting span{
+	padding-left:15px;
+	position:absolute;
+	top:20px;
+	right:40px;
+}
+
+.setting p.setting_1{
+	background: url(../img/arrow.png) no-repeat 98% 15px;
+	background-size:30px;
+}
+
+p.q{
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+p.q span{
+	font-size:20px;
+	width:20px;
+	height:20px;
+	border:1px solid #A4A4A4;
+	padding:5px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
