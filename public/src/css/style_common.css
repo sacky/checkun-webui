@@ -6,7 +6,7 @@ html,body,ul,ul,li,p,dl,dt,dd{
   padding:0;
   margin:0;
   line-height:1.0;
-  font-family: 
+  font-family:
     'Hiragino Kaku Gothic ProN',
     Meiryo,
     "sans-serif";
@@ -50,7 +50,7 @@ body{
 	.back, .groupicon, .title, .edit{
 		float:left;
 	}
-	
+
 	.back{
 		height:50px;
 		width:100px;
@@ -58,26 +58,26 @@ body{
 		padding-top:6px;
 		background:url(../img/icon.png) no-repeat 50px;
 	}
-	
+
 	.title{
 		font-size:30px;
 		padding:10px 0px 0px 30px;
 	}
-	
+
 	img.edit,img.cross{
 		float:right;
 		width:30px;
 		padding-top:10px;
 		margin-right:10px;
 	}
-	
+
 
 /*nav*/
 	nav{
 		overflow: hidden;
 		margin-bottom:15px;
 	}
-	
+
 	nav li a{
 		float:left;
 		width:25%;
@@ -89,15 +89,15 @@ body{
 		border-bottom:3px solid #000000;
 		border-right:1px solid #000000;
 	}
-	nav li.last a{ 
+	nav li.last a{
 		border-right:none;
 	}
-	
-	.current a{
+
+	/*.current a{
 		background:#70bf41;
 		color:#ffffff;
-	}
-	
+	}*/
+
 /*content*/
 	.content p.subject{
     padding-left:20px;
@@ -105,15 +105,15 @@ body{
 		padding-bottom: 15px;
 		border-bottom:1px solid #000000;
 	}
-	
+
 /*footer*/
 	footer{
 		border-top:1px solid #ccc;
 		margin-top:10px;
 		padding:10px 0px 10px;
-		
+
 	}
-	
+
 	footer p a{
 		padding:10px;
 		text-align: center;
@@ -124,7 +124,6 @@ body{
 		margin:0 auto;
 		border-radius: 10px;
 	}
-	
-	
-}
 
+
+}

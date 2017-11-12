@@ -5,3 +5,8 @@
 .tab-area.current{
   display: block;
 }
+
+.selected a {
+    background:#70bf41;
+    color:#ffffff;
+}

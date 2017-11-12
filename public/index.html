@@ -13,30 +13,45 @@
 	<link href="src/css/style_setting_pricechange_detail.css" rel="stylesheet" type="text/css" >
 	<link href="src/css/style_setting_ratechange.css" rel="stylesheet" type="text/css" >
 	<link href="src/css/menubar.css" rel="stylesheet" type="text/css" >
+	<link href="src/css/sidebar.css" rel="stylesheet" type="text/css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/footerFixed.js"></script>
 	<script type="text/javascript" src="src/js/menubar.js"></script>
+	<script type="text/javascript" src="src/js/sidebar.js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
 
 	<header>
-		<p class="back"><a href="#">＜</a></p>
+		<p class="back"><a href="#" onclick="openNav()">＜</a></p>
 		<p class="title">LINE title</p>
 		<p><a href="#"><img class="cross" src="src/img/cross.png" alt="close"></a></p>
 		<p><a href="#"><img class="edit" src="src/img/pen.png" alt="edit"></a></p>
-
 	</header>
 
+	<!-- Side bar -->
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<p class="sidemenu-header">会計グループ一覧</p>
+		<p>未精算グループ</p>
+		<a href="#">20170818</a>
+		<a href="#">20170818</a>
+		<a href="#">20170818</a>
+		<p>精算済グループ</p>
+		<a href="#">20170818</a>
+		<a href="#">20170818</a>
+		<a href="#">20170818</a>
+	</div>
 
+	<!-- Menu bar -->
 	<div class="tab-block">
 		<nav>
 			<ul class="tab-list">
-				<li data-tabIndex="1" class="current"><a href="#">会計<br>メンバー</a></li>
+				<li data-tabIndex="1"><a href="#">会計<br>メンバー</a></li>
 				<li data-tabIndex="2"><a href="#">支払<br>一覧</a></li>
 				<li data-tabIndex="3"><a href="#">設定<br>一覧</a></li>
-				<li data-tabIndex="4" class="last"><a href="#">精算<br>履歴</a></li>
+				<li data-tabIndex="4"><a href="#">精算<br>履歴</a></li>
 			</ul>
 		</nav>
 		<div class="tab-area current" data-tabIndex="1">
