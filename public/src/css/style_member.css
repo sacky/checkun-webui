@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.member_page span.total{
+	font-size:20px;
+	color:#8F8F8F;
+}
+
+.member_page dl{
+	padding:5px;
+	overflow: hidden;
+}
+
+.member_page dd.who_pay,.member_page dd.pic{
+	float:right;
+}
+
+.member_page dt, .member_page dd.price{
+	float:left;
+	width:50%;
+	line-height: 1.5;
+}
+
+.member_page dd.who{
+	padding: 10% 1%;
+}
+
+.member_page .menber_pic{
+	width:50%
+}

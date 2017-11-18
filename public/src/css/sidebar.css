@@ -33,12 +33,14 @@ p.sidemenu-header {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 50px;
+    padding: 8px 8px 8px 30px;
     text-decoration: none;
-    font-size: 0.7em;
+    font-size: 1.5em;
     color: #fff;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
 }
 
 /* When you mouse over the navigation links, change their color */

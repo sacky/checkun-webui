@@ -23,7 +23,6 @@ header p.home{
 
 .payment_page_detail dl{
 	padding: 15px;
-	border-bottom:1px solid #000000;
 	overflow: hidden;
 }
 
@@ -75,7 +74,11 @@ header p.home{
 .need_pay .person_2{
 	line-height: 2.0;}
 
-
-
+.payment_page_detail dd.who{
+	padding: 2% 1%;
+}
+.payment_page_detail .menber_pic{
+	width:25%
+}
 
 

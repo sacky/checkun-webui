@@ -57,3 +57,10 @@ header p.home{
 	float:right;
 	padding-right:20px;
 }
+
+.setting_detail_02 dd.who{
+	padding: 2% 1%;
+}
+.setting_detail_02 .menber_pic{
+	width:15%
+}
