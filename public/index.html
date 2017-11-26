@@ -12,13 +12,13 @@
 	<link href="src/css/style_history_detail.css" rel="stylesheet" type="text/css" >
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/footerFixed.js"></script>
-	<script type="text/javascript" src="src/js/menubar.js"></script>
-	<script type="text/javascript" src="src/js/sidebar.js"></script>
+	<script type="text/javascript" src="src/js/menuBar.js"></script>
+	<script type="text/javascript" src="src/js/sideBar.js"></script>
+	<script type="text/javascript" src="src/js/paymentDetailSwitching.js"></script>
 	<meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-
 	<header>
 		<p class="back"><a href="#" onclick="openNav()">＜</a></p>
 		<p class="title">LINE title</p>
@@ -26,47 +26,46 @@
 		<p><a href="#"><img class="edit" src="src/img/pen.png" alt="edit"></a></p>
 	</header>
 
-	<!-- Side bar -->
+	<!-- side bar -->
 	<div id="mySidenav" class="sidenav">
-		<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<p class="sidemenu-header">会計グループ一覧</p>
 		<p>未精算グループ</p>
 		<a href="javascript:void(0)" class="list-group-item" onclick="closeNav()">
-            <img src="src/img/icon.png" >LINE 旅行</img>
-        </a>
+			<img src="src/img/icon.png" >LINE 旅行</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20170308</img>
-        </a>
+			<img src="src/img/icon.png" >20170308</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20170415</img>
-        </a>
+			<img src="src/img/icon.png" >20170415</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20170508</img>
-        </a>
+			<img src="src/img/icon.png" >20170508</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20171008</img>
-        </a>
+			<img src="src/img/icon.png" >20171008</img>
+		</a>
 		<p>精算済グループ</p>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20170715</img>
-        </a>
+			<img src="src/img/icon.png" >20170715</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20170718</img>
-        </a>
+			<img src="src/img/icon.png" >20170718</img>
+		</a>
 		<a href="#" class="list-group-item">
-            <img src="src/img/icon.png" >20171018</img>
-        </a>
+			<img src="src/img/icon.png" >20171018</img>
+		</a>
 	</div>
 
-	<!-- Menu bar -->
+	<!-- menu bar -->
 	<div class="tab-block">
 		<nav>
 			<ul class="tab-list">
 				<li data-tabIndex="1"><a href="#">会計<br>メンバー</a></li>
 				<li data-tabIndex="2"><a href="#">支払<br>一覧</a></li>
 				<li data-tabIndex="3"><a href="#">設定<br>一覧</a></li>
-				<li data-tabIndex="4"><a href="#">精算<br>履歴</a></li>
+				<li id="history_tab" data-tabIndex="4"><a href="#">精算<br>履歴</a></li>
 			</ul>
 		</nav>
 		<div class="tab-area current" data-tabIndex="1">
@@ -112,13 +111,12 @@
 						<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
 					</dl>
 				</a>
-
 				<a href="#">
-						<dl>
-							<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
-							<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
-						</dl>
-					</a>
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
+					</dl>
+				</a>
 				<a href="#">
 					<dl>
 						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
@@ -127,12 +125,12 @@
 					</dl>
 				</a>
 				<a href="#">
-						<dl>
-							<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
-							<dd class="who_pay">all</dd>
-							<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
-						</dl>
-					</a>
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
+					</dl>
+				</a>
 				<a href="#">
 					<dl>
 						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
@@ -140,22 +138,24 @@
 					</dl>
 				</a>
 				<a href="#">
-						<dl>
-							<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
-							<dd class="who_pay">all</dd>
-							<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
-						</dl>
-					</a>
+					<dl>
+						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
+						<dd class="who_pay">all</dd>
+						<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
+					</dl>
+				</a>
 				<a href="#">
 					<dl>
 						<dt>項目名：高速代<br><span>金額：1,000円</span></dt>
 						<dd class="who_pay">all</dd>
-						<dd class="pic"></dd>
+						<dd class="pic"><img src="src/img/1000.png" class="pay_pic"></dd>
 					</dl>
 				</a>
 			</div>
 			<!--content-->
+
 		</div>
+
 		<div class="tab-area" data-tabIndex="3">
 			<!--content setting_page-->
 			<div class="content">
@@ -183,14 +183,51 @@
 					精算履歴
 				</p>
 
+				<!--content history_default-->
 				<div class="setting">
-					<a href="src/html/index_history_detail.html"><p class="setting_1">まだ精算されていません。</p></a>
+					<a id="display_payment_detail" href="#"><p class="setting_1">まだ精算されていません。</p></a>
 				</div>
+
+				<!--content hisotory_detail-->
+				<div class="content history_detail">
+					<div class="who_pay">
+						<p class= "person">あなたは、</p>
+						<div class="person_2">
+							<span class="pay_or_paid">払う</span>
+							<span class="name">NAME</span>
+							<span class="price">¥6,000</span>
+						</div>
+
+						<div class="person_2">
+							<span class="pay_or_paid">払う</span>
+							<span class="name">NAME</span>
+							<span class="price">¥6,000</span>
+						</div>
+					</div>
+					<div class="seisan">
+						<p class="seisan_1">■精算1</p>
+						<div class="left">
+							<p class="name">name</p>
+							<p class="howmuch">¥6,000</p>
+							<p class="name">name</p>
+						</div>
+						<p class="detail_change"><a href="#">精算完了<br>を通知</a></p>
+					</div>
+					<div class="seisan">
+						<p class="seisan_1">■精算2</p>
+						<div class="left">
+							<p class="name">name</p>
+							<p class="howmuch">¥6,000</p>
+							<p class="name">name</p>
+						</div>
+						<p class="detail_change"><a href="#">精算完了<br>を通知</a></p>
+					</div>
+				</div>
+				<!--content-->
 
 			</div>
 			<!--content-->
 		</div>
-
 
 		<footer id="footer">
 			<p><a href="#">会計メンバーに招待する</a></p>

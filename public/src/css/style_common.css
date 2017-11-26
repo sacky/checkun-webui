@@ -38,6 +38,12 @@ body{
   box-sizing: border-box;
 }
 
+.history_detail {
+  display: none;
+}
+
+
+
 /*767px以下*/
 @media only screen and (max-width: 767px) {
 	body{
@@ -124,6 +130,5 @@ body{
 		margin:0 auto;
 		border-radius: 10px;
 	}
-
 
 }
